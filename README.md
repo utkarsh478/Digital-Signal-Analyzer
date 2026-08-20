@@ -198,23 +198,7 @@ The analyzer was tested against a bench function generator at 100 Hz, 500 Hz, 1 
 - The main loop busy-waits (`while (!g_samplingDone) {}`) instead of sleeping the CPU during acquisition — fine here since the MCU has nothing else to do, but worth revisiting for a lower-power design.
 - No FFT / harmonic analysis — only fundamental frequency and peak amplitude.
 
-## References
 
-1. Texas Instruments, *Tiva TM4C123GH6PM Microcontroller Data Sheet*, Doc. SPMS376E, 2014.
-2. Texas Instruments, *TivaWare Peripheral Driver Library User's Guide*, Doc. SPMU298D, 2014.
-3. Texas Instruments, *EK-TM4C123GXL LaunchPad Evaluation Board User's Guide*, Doc. SPMU296, 2013.
-4. ARM Ltd., *Cortex-M4 Technical Reference Manual*, ARM DDI 0439D, 2015.
-5. Hitachi, *HD44780U Dot Matrix Liquid Crystal Display Controller/Driver Datasheet*, 1998.
-6. NXP Semiconductors, *PCF8574 Remote 8-Bit I/O Expander for I2C-Bus Datasheet*, 2013.
-7. J. W. Valvano, *Embedded Systems: Real-Time Interfacing to ARM Cortex-M Microcontrollers*, 5th Ed., 2014.
-8. NXP Semiconductors, *I2C-bus Specification and User Manual*, UM10204 Rev. 7.0, 2021.
-
-## Authors
-
-- **Shiviansh Yadav** (23UEC623) — Department of ECE, LNMIIT, Jaipur
-- **Abhishek Kumar** (23DEC501) — Department of ECE, LNMIIT, Jaipur
-
-Under the guidance of **Dr. Deepak Nair**, Department of ECE, LNMIIT.
 
 ## License
 
