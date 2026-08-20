@@ -180,14 +180,13 @@ The analyzer was tested against a bench function generator at 100 Hz, 500 Hz, 1 
 ├── src/
 │   └── main.c                      # Complete firmware source
 ├── images/
-│   ├── system_architecture.png     # Recreated block diagram
-│   ├── timer_adc_pipeline.png      # Recreated timing diagram
-│   ├── zero_crossing_detection.png # Recreated algorithm diagram
-│   ├── hardware_setup.jpg          # Add your own board photo
-│   ├── result_1khz_sine.jpg        # Add your own LCD photo
-│   └── result_5khz_square.jpg      # Add your own LCD photo
-└── docs/
-    └── ESD_Report_Digital_Signal_Analyzer.pdf   # Add the full report PDF here (optional)
+    ├── system_architecture.png     # Recreated block diagram
+    ├── timer_adc_pipeline.png      # Recreated timing diagram
+    ├── zero_crossing_detection.png # Recreated algorithm diagram
+    ├── hardware_setup.jpg          # Add your own board photo
+    ├── result_1khz_sine.jpg        # Add your own LCD photo
+    └── result_5khz_square.jpg      # Add your own LCD photo
+
 ```
 
 ## Known Limitations / Future Work
