@@ -204,5 +204,3 @@ The analyzer was tested against a bench function generator at 100 Hz, 500 Hz, 1 
 Released under the [MIT License](LICENSE).
 
 ---
-
-*Diagrams in `images/` (system architecture, timer-ADC pipeline, zero-crossing detection) are recreated from the project report's content for this repository. The three photographs (`hardware_setup.jpg`, `result_1khz_sine.jpg`, `result_5khz_square.jpg`) referenced above are placeholders — drop your own board/LCD photos into `images/` with those filenames before pushing. The full report PDF is likewise not bundled here; add it to `docs/` if you'd like it alongside the code.*
