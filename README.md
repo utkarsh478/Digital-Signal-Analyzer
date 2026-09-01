@@ -22,9 +22,9 @@ Real-time frequency and peak-voltage measurement of an analog signal using hardw
 - [Results](#results)
 - [Getting Started](#getting-started)
 - [Repository Structure](#repository-structure)
-- [Known Limitations](#known-limitations--future-work)
+
 - [References](#references)
-- [Authors](#authors)
+
 - [License](#license)
 
 ## Overview
