@@ -141,16 +141,6 @@ The analyzer was tested against a bench function generator at 100 Hz, 500 Hz, 1 
 
 > Measured values differ slightly from the true input frequency because the zero-crossing algorithm has a fixed resolution of Δf ≈ 48.8 Hz — every reading is quantized to a multiple of this step.
 
-### Resource Utilization
-
-| Resource | Used | Available | Utilization |
-|---|---|---|---|
-| Flash (Code) | ~20 KB | 256 KB | ~8% |
-| SRAM (Data) | ~10 KB | 32 KB | ~31% |
-| ADC Modules | 1 (ADC0) | 2 | 50% |
-| Timer Modules | 1 (Timer0) | 6 | 17% |
-| I2C Modules | 1 (I2C0) | 4 | 25% |
-| GPIO Ports | 3 (B, E, F) | 6 | 50% |
 
 ## Getting Started
 
@@ -188,14 +178,6 @@ The analyzer was tested against a bench function generator at 100 Hz, 500 Hz, 1 
     └── result_5khz_square.jpg      # Add your own LCD photo
 
 ```
-
-## Known Limitations / Future Work
-
-- Frequency resolution is fixed at ~48.8 Hz (inherent to the 2048-sample / 100 kHz window); a larger buffer or interpolation between samples would improve it at the cost of SRAM or complexity.
-- Single-channel only — no simultaneous multi-signal capture.
-- The button ISR sets `g_startRequest` unconditionally; it doesn't yet suppress a re-trigger while a measurement is already in progress.
-- The main loop busy-waits (`while (!g_samplingDone) {}`) instead of sleeping the CPU during acquisition — fine here since the MCU has nothing else to do, but worth revisiting for a lower-power design.
-- No FFT / harmonic analysis — only fundamental frequency and peak amplitude.
 
 
 
