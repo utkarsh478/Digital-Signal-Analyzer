@@ -494,12 +494,7 @@ void SwitchISR(void)
 {
     GPIOIntClear(GPIO_PORTF_BASE, SWITCH_1);
 
-    /* Only accept if not already sampling */
-    if (!g_startRequest && g_samplingDone)
-    {
-        /* Intentionally left empty on first boot;
-           g_samplingDone is false initially, handled below */
-    }
+
 
     g_startRequest = true;
 
