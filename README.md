@@ -43,7 +43,6 @@ Built for the **Embedded Systems and Design (ESD)** course at LNMIIT, Jaipur, un
 - **16×2 character LCD** output over I2C (PCF8574 backpack, 4-bit HD44780 protocol)
 - **Fully interrupt-driven firmware** — GPIO, ADC, and Timer ISRs feeding a foreground/background super-loop
 - **Debounced push-button trigger** with dual-LED status indication (measuring / ready)
-- Verified **<1% frequency error above 200 Hz** against a bench function generator
 - Lightweight footprint — **~8% Flash, ~31% SRAM** utilization, leaving headroom for extensions
 
 ## Hardware Used
